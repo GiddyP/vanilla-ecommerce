@@ -295,7 +295,9 @@ body.dark-theme {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
+    background: rgba(68, 66, 66, 0.3);
+    backdrop-filter: blur(30px);
     top: 0;
     z-index: 1;
     right: -100%;
@@ -1235,7 +1237,7 @@ body.dark-theme {
   .nav__list {
     flex-direction: row;
     column-gap: 2.5rem;
-    margin-left: 18rem;
+    margin-left: 8rem;
   }
 
   .nav__link {
@@ -1343,6 +1345,10 @@ body.dark-theme {
 }
 
 @media screen and (min-width: 992px) {
+  .nav__list {
+    margin-left: 16rem;
+  }
+
   .section__title {
     font-size: var(--h2-font-size);
   }
@@ -1396,6 +1402,10 @@ body.dark-theme {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  .nav__list {
+    margin-left: 18rem;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
